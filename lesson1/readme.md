@@ -1,3 +1,3 @@
-## Lesson 1: Introduction
+## Lesson: Introduction to C# programming
 
-[Lesson 1 Slide](https://1drv.ms/p/s!AlB8AhjPseywgSS9AEFJ-qmtpYf4?e=3RV0bu)
+[Lesson Slide](https://1drv.ms/p/s!AlB8AhjPseywgSS9AEFJ-qmtpYf4?e=3RV0bu)
