@@ -29,5 +29,31 @@ namespace lesson5_oop.Tests
 
             Assert.AreEqual(expected_return, actual_return);
         }
+
+        [TestMethod()]
+        public void CalculateRecursionTest()
+        {
+            var n = 10;
+            var expected = 55;
+
+            Fibonacci fb = new Fibonacci();
+
+            var actual = fb.CalculateRecursion(n);
+
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod()]
+        public void CalculateDppTest()
+        {
+            var n = 10;
+            var expected = 55;
+
+            Fibonacci fb = new Fibonacci();
+
+            var actual = fb.CalculateDpp(n);
+
+            Assert.AreEqual(expected, actual);
+        }
     }
 }

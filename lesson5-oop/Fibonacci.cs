@@ -1,4 +1,9 @@
-﻿namespace lesson5_oop
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Diagnostics;
+
+namespace lesson5_oop
 {
     public class Fibonacci
     {
@@ -74,5 +79,33 @@
         // abstract class
 
         // interface class 
+
+
+        public int CalculateRecursion(int n) 
+        {
+            if(n==0) return 0;
+            if(n==1) return 1;
+
+            Debug.WriteLine( "Calculate " + n );
+
+            return CalculateRecursion(n - 1) + CalculateRecursion(n - 2);
+        }
+
+
+        Dictionary<int, int> dict = new Dictionary<int, int>(); 
+        public int CalculateDpp(int n)
+        {
+            if(n==0) return 0;
+            if(n==1) return 1;
+
+            Debug.WriteLine("Calculate " + n);
+
+            var fn1 = dict.ContainsKey(n - 1) ? dict[n-1] : CalculateDpp(n - 1);
+            var fn0 = dict.ContainsKey(n - 2) ? dict[n - 2] : CalculateDpp(n - 2);
+
+            dict[n] = fn1 + fn0;
+
+            return dict[n];
+        }
     }
 }
