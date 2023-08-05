@@ -91,7 +91,9 @@ namespace lesson5_oop
             return CalculateRecursion(n - 1) + CalculateRecursion(n - 2);
         }
 
-
+        // key - value pair, hash map
+        // Algorithm efficiency:: Big-O O(n), O(n^2)
+        // Hash Map / Hash Table / Dictionary :: use key value - O(1) 
         Dictionary<int, int> dict = new Dictionary<int, int>(); 
         public int CalculateDpp(int n)
         {

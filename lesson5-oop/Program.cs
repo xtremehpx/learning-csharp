@@ -59,13 +59,18 @@ namespace lesson5_oop
 
             // access member Number
             // assign value
-            fb.Number = 100;
+            fb.Number = 10;
             Console.WriteLine("Assigned value of Number: " + fb.Number);
 
+            Console.WriteLine(  "Dynamic Programming");
+            fb.CalculateDpp(10);
 
-            // parametric constructor
-            fb = new Fibonacci(13);
-            Console.WriteLine("Default value of Number: " + fb.Number);
+            Console.WriteLine("Recursion");
+            fb.CalculateRecursion(10);
+
+            //// parametric constructor
+            //fb = new Fibonacci(13);
+            //Console.WriteLine("Default value of Number: " + fb.Number);
 
 
             //class4 7/29/23 S
